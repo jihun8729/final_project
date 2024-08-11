@@ -12,7 +12,6 @@ int main(int agrc, char *argv[]) {
 
     
     int r_count; //receiver 개수
-    char f_name[30]; //파일 이름
     size_t seg_size; //segment 크기
 
     char ip[20]; // sender ip
