@@ -29,7 +29,7 @@ typedef struct{
     r_info *each_r; // 각 receiver들 정보가 있는 구조체
     int sockfd[30]; // receiver들 끼리 연결된 sockfd
     int serv_sock; //sender와 연결된 디스크립터
-    char f_name[30]; // 파일 이름
+    char f_name[100]; // 파일 이름
     long file_size; // 총 파일 크기
     int count;
     int now_f; // 현재 receiver가 다루고 있는 세그먼트
@@ -37,7 +37,7 @@ typedef struct{
 
 typedef struct{
     int sockfd[30]; //연결된 소켓들의 디스크립터
-    char f_name[30]; // 파일 이름
+    char f_name[100]; // 파일 이름
     file_info *file_i; // 각 파일 segment 정보
     int seg_count; // 총  segement 개수
     long file_size; // 총 파일 크기
